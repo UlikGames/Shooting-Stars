@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Shooting Stars</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--
 
+██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗                    
+██║  ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝                    
+███████║███████║██████╔╝██████╔╝ ╚████╔╝                     
+██╔══██║██╔══██║██╔═══╝ ██╔═══╝   ╚██╔╝                      
+██║  ██║██║  ██║██║     ██║        ██║                       
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝        ╚═╝                       
+                                                             
+██████╗ ██╗██████╗ ████████╗██╗  ██╗██████╗  █████╗ ██╗   ██╗
+██╔══██╗██║██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔══██╗╚██╗ ██╔╝
+██████╔╝██║██████╔╝   ██║   ███████║██║  ██║███████║ ╚████╔╝ 
+██╔══██╗██║██╔══██╗   ██║   ██╔══██║██║  ██║██╔══██║  ╚██╔╝  
+██████╔╝██║██║  ██║   ██║   ██║  ██║██████╔╝██║  ██║   ██║   
+╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   
+
+██╗  ██╗ █████╗ ██████╗      ██╗ █████╗ ██████╗    ██╗
+██║  ██║██╔══██╗██╔══██      ██║██╔══██╗██╔══██╗   ██║
+███████║███████║██║  ██║     ██║███████║██████╔╝   ██║
+██╔══██║██╔══██║██║  ██║██╗  ██║██╔══██║██╔══██╗   ╚═╝
+██║  ██║██║  ██║██████╔╝╚█████╔╝██║  ██║██║  ██║   ██╗
+╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝
+
+-->
+<head>
+	<meta charset="UTF-8">
+	<title>Shooting Star</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/b8c50f2f63.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="moon">
-  <span class="crater"></span>
-  <span class="crater"></span>
-  <span class="crater"></span>
-  <span class="crater"></span>
+<div class="space"></div>
+<div class="stars stars stars--small"></div>
+<div class="stars stars--medium"></div>
+<div class="stars stars--big"></div>
+<div class="shooting-stars">
+	<div class="shooting-star shooting-star--mid"></div>
+	<div class="shooting-star shooting-star--fast"></div>
+	<div class="shooting-star shooting-star--meh"></div>
 </div>
 <div class="word">
-  <p id="1">Close your eyes and make a wish!</p>
-  <p id="2">I made a wish.</p>
-  <p id="3">My wish is your all wishes becoming real</p>
-  <p id="4">If you are done I'll take you special place</p>
-  <a href="https://ulikgames.github.io/Gallery5/" id="5">Click me!</a>
+	<p id="1" style="display: none; margin: 0; margin-right: 10px; float: right;">Close your eyes and make a wish <i class="fas fa-praying-hands"></i></p>
+	<p id="2" style="display: none; margin: 0; margin-left: 10px;">Pray for yourself <i class="far fa-smile-beam"></i></p>
+	<p id="4" style="display: none; margin: 0; margin: 20px 10px 0px 0px; float: right;">My desire is your all wishes become true <i class="far fa-grin-beam"></i></p>
+	<p id="3" style="display: none; margin: 0; margin: 20px 0px 0px 10px;">I wished ...</p>
+	<p id="contunie" style="text-align: center; display: none;"><a href=https://ulikgames.github.io/Gallery5/>If you are done let's take you a special place ^_^. Click Me!</a></p>
 </div>
-<div class="shooting">
-  <div class="core"></div>
-  <div class="trail"></div>
-</div>
-
-<script  src="./script.js"></script>
-
+<!-- partial -->
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
